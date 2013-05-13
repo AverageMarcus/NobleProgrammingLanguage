@@ -1,0 +1,7 @@
+function Start(){
+	!-> "This program will echo back all you enter until you enter 'X'";
+	do{
+		!userInput <- Get_Input("Your Input");
+		!-> !userInput;
+	}while(! String_Equal(!userInput,"X"));
+};

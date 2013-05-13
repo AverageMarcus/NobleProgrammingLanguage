@@ -1,0 +1,15 @@
+function Start(){
+	!inputMsg <- "Please enter length";
+	!length <- String_To_Integer(Get_Input(!inputMsg));
+	!inputMsg <- "Please enter width";
+	!width <- String_To_Integer(Get_Input(!inputMsg));
+
+	!area <- Calculate_Area(!length, !width);
+	!-> "The area of the rectangle is";
+	!-> !area;
+};
+
+function Calculate_Area(!length, !width){
+	!area <- !length * !width;
+	!area ->;	
+};

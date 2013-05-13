@@ -1,0 +1,23 @@
+function Start(){
+	!count <- 0;
+	!inputMsg <- "Please enter number for Fibonacci sequence";
+	!userText <- Get_Input(!inputMsg);
+	!loops <- String_To_Integer(!userText);
+	repeat(!loops){
+		!count <- !count + 1;
+		!fibnum <- Fib(!count);
+		!-> !fibnum;
+	};
+};
+
+
+function Fib(!n){
+	!a <- 0;
+	!b <- 1;
+	repeat(!n){
+		!temp <- !a;
+		!a <- !b;
+		!b <- !temp + !b;
+	};
+	!a ->;
+};

@@ -1,0 +1,28 @@
+function Start(){
+	!-> "Inception Start";
+	!-> "Calling Function1";
+	Function1();
+	!-> "Back in Start";
+};
+
+function Function1(){
+	!-> "  In Function 1, Calling Function 2";
+	Function2();
+	!-> "  Back in Function1";
+};
+
+function Function2(){
+	!-> "    In Function 2, Calling Function 3";
+	Function3();
+	!-> "    Back in Function2";
+};
+
+function Function3(){
+	!-> "      In Function 3, Calling Function 4";
+	Function4();
+	!-> "      Back in Function3";
+};
+
+function Function4(){
+	!-> "        In Function 4. This is as deep as we'll go.";
+};

@@ -1,0 +1,15 @@
+function Start(){
+	!inputMsg <- "Please enter a number";
+	!userText <- Get_Input(!inputMsg);
+	!value <- String_To_Integer(!userText);
+	!count <- !value - 1;
+	for(;!count>0;){
+		if(!value * !count < !value){
+			‽("Looks like we had a buffer overflow");
+		};
+		!value <- !value * !count;
+		!count <- !count - 1;
+	};
+	Print_Inline("Factorial is: ", false);
+	Print_Inline(Integer_To_String(!value), true);
+};

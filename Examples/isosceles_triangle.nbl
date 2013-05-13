@@ -1,0 +1,14 @@
+function Start(){
+	!inputMsg <- "Please enter the size";
+	!userText <- Get_Input(!inputMsg);
+	!size <- String_To_Integer(!userText);
+	!count <- 0;
+	!stars <- "*";
+	repeat(!size){
+		if(!count>0){
+			!stars <- String_Concat(!stars, "*");
+		};
+		!-> !stars;
+		!count <- !count + 1;
+	};
+};
